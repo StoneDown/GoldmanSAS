@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    align-items: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(28, 20px); /* o el valor que estés usando */
+    width: 560px; /* 28 * 20 */
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
+
+.wall {
+    background-image: url("images/wall.png");
+}
+
+.pac-dot {
+    background-image: url("images/pac-dot.png");
+}
+
+.power-pellet {
+    background-image: url("images/power-pellet.png");
+}
+
+.pac-man {
+    background-image: url("images/pac-man.png");
+}
+
+.blinky {
+    background-image: url("images/ghost-blinky.png");
+}
+
+.pinky {
+    background-image: url("images/ghost-pinky.png");
+}
+
+.inky {
+    background-image: url("images/ghost-inky.png");
+}
+
+.clyde {
+    background-image: url("images/ghost-clyde.png");
+}
+
+.scared-ghost {
+    background-image: url("images/scared-ghost.png") !important;
+}
+

@@ -1,0 +1,43 @@
+/* Estilos para los productos */
+.productos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.producto {
+    width: 18%; /* Puede ajustarse dependiendo del tamaño que quieras */
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+}
+
+.producto-info {
+    padding: 10px;
+}
+
+.agregar {
+    display: none;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.producto:hover .agregar {
+    display: block; /* Muestra el botón solo cuando se pasa por encima */
+}
+
+.agregar:focus {
+    outline: none;
+}

@@ -1,0 +1,223 @@
+:root {
+    --color-primario: aquamarine;  /* Color principal oscuro */
+    --color-secundario: #666666;  /* Color secundario gris */
+    --color-fondo: rgba(0, 255, 255, 0.253);  /* Fondo blanco */
+    --color-texto: #333333;  /* Texto oscuro */
+    --color-borde: #e0e0e0;  /* Bordes grises claros */
+    --sombra: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+    --color-destacado: #0066cc;  /* Azul para elementos destacados */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.logo2 {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
+.search-container {
+    flex-grow: 1;
+    margin: 0 2rem;
+    max-width: 500px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    border-radius: 4px;
+    border: 1px solid var(--color-borde);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: var(--color-destacado);
+    box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #cccccc;
+}
+
+.nav-link img {
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover img {
+    transform: scale(1.1);
+}
+
+.menu-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border-radius: 4px;
+    box-shadow: var(--sombra);
+    padding: 1rem;
+    width: 280px;
+    display: none;
+    z-index: 10;
+    border: 1px solid var(--color-borde);
+}
+
+.menu-section {
+    margin-bottom: 1rem;
+}
+
+.menu-section h3 {
+    color: var(--color-primario);
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.submenu {
+    margin-top: 0.5rem;
+    padding-left: 0.8rem;
+    border-left: 2px solid var(--color-borde);
+}
+
+.submenu p {
+    margin: 0.4rem 0;
+}
+
+.submenu a {
+    color: var(--color-texto);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.submenu a:hover {
+    color: var(--color-destacado);
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.producto {
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: var(--sombra);
+    transition: transform 0.3s ease;
+    border: 1px solid var(--color-borde);
+}
+
+.producto:hover {
+    transform: translateY(-3px);
+}
+
+.producto-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.producto-info {
+    padding: 1.2rem;
+}
+
+.producto-info h3 {
+    color: var(--color-primario);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.producto-info p {
+    color: var(--color-destacado);
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.agregar {
+    background-color: var(--color-destacado);
+    color: white;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.agregar:hover {
+    background-color: #0055aa;
+}
+
+h6 {
+    text-align: center;
+    padding: 1.5rem;
+    color: #777;
+    font-size: 0.8rem;
+    border-top: 1px solid var(--color-borde);
+    margin-top: 1.5rem;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--color-borde);
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: var(--color-texto);
+    font-size: 0.9rem;
+}

@@ -1,0 +1,90 @@
+/* Menú desplegable */
+.menu-dropdown {
+    display: none;  /* Oculto por defecto */
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.menu-dropdown .menu-section {
+    margin-bottom: 20px;
+}
+
+.menu-dropdown h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.menu-dropdown .submenu {
+    display: none;  /* Ocultar submenú por defecto */
+    margin-top: 10px;
+}
+
+.menu-dropdown .submenu a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilo para el campo de precio */
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Flecha para desplegar los submenús */
+.arrow {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Otros estilos */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.search-container {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.logo-img {
+    display: inline-block;
+    vertical-align: middle;
+}

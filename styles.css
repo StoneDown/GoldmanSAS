@@ -1,0 +1,138 @@
+body{
+    font-family: sans-serif;
+    margin:0%;
+    background-color: rgba(0, 255, 255, 0.253);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color:aquamarine;
+    align-items: center;
+    padding: 10px;
+}
+h2{
+    color:red;
+}
+.logo2{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 30px;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.nav2{
+    font-weight: 600;
+    padding-right: 10px;
+}
+.nav2 a:hover{
+    color:antiquewhite;
+}
+@media(max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px;
+    }
+}
+.nav-link {
+    display: inline-block; /* Para que ocupen todo el ancho disponible */
+    padding: 10px; /* Espacio alrededor del texto */
+    background-color: aquamarine; /* Color de fondo azul */
+    color: black; /* Color del texto blanco */
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    transition: background-color 0.3s; /*Transición suave al pasar el cursor */
+}
+.nav-link:hover {
+    background-color: white; /* Cambia el fondo a blanco */
+    color: blue; /* Cambia el texto a azul */
+}
+.imagen2 {
+    display: flex;
+    justify-content: center; /* Centramos horizontalmente las imágenes */
+    align-items: center; /* Centramos verticalmente las imágenes y el texto */
+    gap: 70px; /* Espacio entre las imágenes */
+}
+
+.imagen2 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.imagen2 span {
+    text-align: center;
+}
+.image-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.image-container img {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.image-container img:first-child {
+    opacity: 1;
+}
+
+.nombre-empresa{
+    color:red;
+}
+
+.item1{
+    text-align: center;
+}
+
+/* Tema azul - por defecto */
+body.tema-azul {
+    background-color: rgba(0, 255, 255, 0.253);
+}
+.tema-azul .main-header {
+    background-color: aquamarine;
+}
+.tema-azul .nav-link {
+    background-color: aquamarine;
+}
+
+/* Tema oscuro */
+body.tema-oscuro {
+    background-color: rgb(87, 86, 86);
+}
+.tema-oscuro .main-header {
+    background-color: rgb(39, 38, 38);
+}
+.tema-oscuro .nav-link {
+    background-color: rgb(39, 38, 38);
+}
+
+/* Tema claro */
+body.tema-claro {
+    background-color: gainsboro;
+}
+.tema-claro .main-header {
+    background-color: whitesmoke;
+}
+.tema-claro .nav-link {
+    background-color: whitesmoke;
+}
+.tema-claro .seccion-sobre-nosotros {
+    background-color: rgb(165, 163, 163);
+}
+.tema-claro .seccion-contacto {
+    background-color: rgb(165, 163, 163);
+}
+

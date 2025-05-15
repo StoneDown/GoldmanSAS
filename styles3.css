@@ -1,0 +1,51 @@
+/* Estilo para el contenedor del header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Esto asegura que los elementos se distribuyan */
+    padding: 20px;
+}
+
+/* Asegura que el enlace ocupe toda la barra de búsqueda */
+.search-link {
+    display: block;  /* Hace que el enlace ocupe todo el contenedor */
+    width: 100%;     /* Ajusta al tamaño que necesites */
+}
+
+/* Estilo de la barra de búsqueda */
+.search-container {
+    width: 100%;         /* Asegura que el contenedor ocupe el 100% del espacio disponible */
+    max-width: 600px;    /* Ajusta el ancho máximo si lo deseas */
+    margin: 0 auto;      /* Centra la barra en su contenedor */
+}
+
+.search-bar {
+    width: 100%;         /* Asegura que el campo de texto ocupe todo el espacio disponible */
+    padding: 10px;       /* Espaciado interno para que se vea bien */
+    font-size: 16px;     /* Tamaño de la fuente */
+    border: 1px solid #ccc;  /* Borde para hacerla visible */
+    border-radius: 5px;  /* Bordes redondeados */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    display: flex;
+    gap: 20px; /* Espaciado entre los enlaces */
+    align-items: center;
+}
+
+/* Estilo para los enlaces de navegación */
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Asegura que la imagen del logo y los textos no se desajusten */
+.logo-img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Puedes ajustar el diseño de la barra de búsqueda si lo necesitas */
+
