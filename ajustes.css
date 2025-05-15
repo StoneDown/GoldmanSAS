@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.main-content {
+    margin-left: 240px;
+    padding: 1rem;
+}
+
+.main-header {
+    padding: 1rem;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.nav-link {
+    padding: 0.5rem;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
